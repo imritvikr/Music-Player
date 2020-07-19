@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Geet Studio</title>
+	<script src="https://kit.fontawesome.com/997cc280fa.js"></script>
+	<link rel="stylesheet" type="text/css" href="HomeScreen.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1">
+</head>
+<body>
+
+        <!-- This is the header of the body -->
+
+	<header id="header">
+		<div id="logo">
+			<img src="image/Geetstudio.png">	
+		</div>
+
+        <div id="favourites">
+        	<a href="#">Favourites</a>
+        </div>
+
+        <div>
+                <form id="search">
+        		<i class="fas fa-search"></i>
+        		<input type="text" name="search" placeholder="Search">
+                        <i class="fas fa-microphone"></i>
+        		
+        	</form>
+        </div>
+
+        <div id="bell">
+                <i class="fas fa-bell"></i>
+        </div>
+
+        <div id="profile">
+                <i class="far fa-user-circle"></i>
+        </div>
+
+	</header>
+
+        <main>
+                
+                <!--  This div is to add carousel in our page -->
+
+                <div id="Carousel">
+                        <div id="images">
+                               
+                                        <img src="image/edm.jpg" id="first">
+                                        <img src="image/edm2.jpg" id="second">
+                                        <img src="image/edm3.jpg" id="third">
+                                        <img src="image/edm4.jpg" id="fourth">
+                                
+                                        
+                        </div>
+
+                        <div id="slider">
+                                <ul>
+                                        <li><a href="#first"><i class="fas fa-circle"></i></a></li>
+                                        <li><a href="#second"><i class="fas fa-circle"></i></a></li>
+                                        <li><a href="#third"><i class="fas fa-circle"></i></a></li>
+                                        <li><a href="#fourth"><i class="fas fa-circle"></i></a></li>
+                                </ul>
+                                        
+                        </div>
+                                
+                </div>
+
+                <!--  This part is to add latest Released songs -->
+                        
+                <div id="latest">
+                        <h3>Latest Release</h3>
+
+                        <div id="componants">
+
+                        <div id="componant1">
+                                <div class="imageLat">
+                                                
+                                        <a href="#music-player"><i class="far fa-play-circle play-button"></i><img src="image/ellieLatest.png"></a>
+
+                                        
+                                </div>
+                                        
+                                <div class="info">
+                                        <h6>Hate Me</h6>
+                                        <br>
+                                        <h6>APR 2, 2020</h6>
+                                </div>
+
+                                <div class="dots">
+                                                
+                                        <a href="#dropdown"><i class="fas fa-ellipsis-h"></i></a>
+                                        <div id="dropdown">
+                                                <a href="#" style="text-decoration: none;"><h6 style="display: inline">Play Now</h6></a>
+                                                <br>
+                                                <a href="#" style="text-decoration: none;"><h6 style="display: inline">Add to Queue</h6></a>
+                                                <br>
+                                                <a href="#" style="text-decoration: none;"><h6 style="display: inline">Add to Favourites</h6></a>
+                                        </div>
+                                </div>
+                                        
+                        </div>
+
+                        <div id="componant2">
+                                <div class="imageLat">
+                                        <a href="#music-player"><i class="far fa-play-circle play-button"></i><img src="image/ellieLatest.png"></a>
+                                </div>
+                                        
+                                <div class="info">
+                                        <h6>Hate Me</h6>
+                                        <br>
+                                        <h6>APR 2, 2020</h6>
+                                </div>
+
+                                <div class="dots">
+                                                
+                                        <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                        
+                                </div>
+                                        
+                        </div>
+
+                        <div id="componant3">
+                                <div class="imageLat">
+                                        <a href="#music-player"><i class="far fa-play-circle play-button"></i><img src="image/ellieLatest.png"></a>
+
+                                </div>
+                                        
+                                <div class="info">
+                                        <h6>Hate Me</h6>
+                                        <br>
+                                        <h6>APR 2, 2020</h6>
+                                </div>
+
+                                <div class="dots">
+                                                
+                                        <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                                       
+                                </div>
+                                        
+                        </div>
+                        </div>
+
+                        <div id="music-player">
+                                <audio controls  loop autoplay>
+                                <i class="far fa-play-circle"></i>
+                                <source src="HateMe.mp3" type="audio/mp3">
+                                Your browser dose not Support the audio Tag
+                                </audio>
+                        </div>
+
+                               
+
+
+
+                </div>
+
+                <!-- This is dedicated for artists.Inside it, there is a link for the individual artist pages(int the canchor tag)-->
+
+                <div id="popular-artist">
+                        <h3>Popular Artist</h3>
+
+                        <div id="list-artist">
+                                        
+                                
+
+                        <div class="artist">
+                                <div class="image">
+                                        <a href="SinglePlaylist.html"><img src="image/EllieArtist.jpg"></a>
+                                                
+                                </div>
+                                        
+                                <h6>Ellie Goulding</h6>
+                        </div>
+
+
+                        <div class="artist">
+                                <div class="image">
+
+                                <a href="SinglePlaylist.html"> <img src="image/ArijitArtist.jpg"></a>
+                                               
+                                </div>
+
+                                <h6>Arijit Singh</h6>
+                                        
+                                        
+                        </div>
+
+                        <div class="artist">
+                                <div class="image">
+
+                                        <a href="SinglePlaylist.html"><img src="image/ArmanArtist.jpg"></a>
+                                                
+                                </div>
+
+                                <h6>Arman Malik</h6>
+
+                        </div>
+
+                        </div>
+
+                                
+                </div>
+
+                <!--  This division is for different Genre -->
+
+                <div id="mood">
+                        <h3>Genre</h3>
+
+                        <div id="list-artist">
+                                        
+                                <div class="imageMood">
+                                        <img src="image/Electronic.png">       
+                                </div>
+                                        
+                                 
+                                <div class="imageMood">
+                                        <img src="image/Party.png">     
+                                </div>
+                                        
+                
+                                <div class="imageMood">
+                                        <img src="image/RoadTrip.png">         
+                                </div>
+
+                        </div>
+
+                                
+                </div>
+
+              <!--   This division is for popular songs in hindi language. -->
+
+                <div id="hindi">
+                        <h3>Popular In Hindi</h3>
+
+                        <div id="list-artist">
+                                        
+                                <div class="imageHindi">
+                                        <img src="image/song0.png">       
+                                </div>
+                                        
+                                 
+                                <div class="imageHindi">
+                                        <img src="image/song6.png">     
+                                </div>
+                                        
+                
+                                <div class="imageHindi">
+                                        <img src="image/song1.png">         
+                                </div>
+
+                                <div class="imageHindi">
+                                        <img src="image/song2.png">         
+                                </div>
+
+                                <div class="imageHindi">
+                                        <img src="image/song3.png">         
+                                </div>
+
+                                       
+
+                        </div>
+
+                                
+                </div>
+
+                <!-- This division is for popular songs in Englis language. Though CSS rules are similar-->
+                <div id="hindi">
+                        <h3>Popular In English</h3>
+
+                        <div id="list-artist">
+                                        
+                                <div class="imageHindi">
+                                        <img src="image/song0.png">       
+                                </div>
+                                        
+                                 
+                                <div class="imageHindi">
+                                        <img src="image/song6.png">     
+                                </div>
+                                        
+                
+                                <div class="imageHindi">
+                                        <img src="image/song1.png">         
+                                </div>
+
+                                <div class="imageHindi">
+                                        <img src="image/song2.png">         
+                                </div>
+
+                                <div class="imageHindi">
+                                        <img src="image/song3.png">         
+                                </div>
+
+                                        
+
+                        </div>
+
+                                
+                </div>
+          
+                     
+
+        </main>
+
+       <!--  This section is for Queue/Playlist, which is on the right side of the page. -->
+
+        <aside>
+                <div id="queueHead">
+                        <h4>Queue</h4>
+                        <p>Queue<a id="drop"href="#queueDrop">v</a></p>
+                        
+
+
+                        <div id="queueDrop">
+                                <a href="#">Queue</a>
+                                <br>
+                                <a href="#">Playlist</a>        
+                                
+                        </div>
+                </div>
+
+                <!-- This is the list of songs present in the Queue. -->
+
+                <div id="songList">
+                        <div id="songIndividual">
+                                <img src="image/song0.png">
+
+                                <div id="songInfo">
+                                        <h6>Genda Phool</h6>
+                                        <br>
+                                        <h6>Mar 25, 2020</h6>
+                                </div>
+
+                                
+                        </div>
+
+                        <div id="songIndividual">
+                                <img src="image/song0.png">
+
+                                <div id="songInfo">
+                                        <h6>Genda Phool</h6>
+                                        <br>
+                                        <h6>Mar 25, 2020</h6>
+                                </div>
+
+                                
+                        </div>
+
+                        <div id="songIndividual">
+                                <img src="image/song0.png">
+
+                                <div id="songInfo">
+                                        <h6>Genda Phool</h6>
+                                        <br>
+                                        <h6>Mar 25, 2020</h6>
+                                </div>
+
+                                
+                        </div>
+
+                        <div id="songIndividual">
+                                <img src="image/song0.png">
+
+                                <div id="songInfo">
+                                        <h6>Genda Phool</h6>
+                                        <br>
+                                        <h6>Mar 25, 2020</h6>
+                                </div>
+
+                                
+                        </div>
+
+                        <div id="songIndividual">
+                                <img src="image/song0.png">
+
+                                <div id="songInfo">
+                                        <h6>Genda Phool</h6>
+                                        <br>
+                                        <h6>Mar 25, 2020</h6>
+                                </div>
+
+                                
+                        </div>
+
+
+                        <div id="songIndividual">
+                                <img src="image/song0.png">
+
+                                <div id="songInfo">
+                                        <h6>Genda Phool</h6>
+                                        <br>
+                                        <h6>Mar 25, 2020</h6>
+                                </div>
+
+                                
+                        </div>
+
+                        <div id="songIndividual">
+                                <img src="image/song0.png">
+
+                                <div id="songInfo">
+                                        <h6>Genda Phool</h6>
+                                        <br>
+                                        <h6>Mar 25, 2020</h6>
+                                </div>
+
+                                
+                        </div>
+
+
+                          <div id="songIndividual">
+                                <img src="image/song0.png">
+
+                                <div id="songInfo">
+                                        <h6>Genda Phool</h6>
+                                        <br>
+                                        <h6>Mar 25, 2020</h6>
+                                </div>
+
+                                
+                        </div>
+
+                          <div id="songIndividual">
+                                <img src="image/song0.png">
+
+                                <div id="songInfo">
+                                        <h6>Genda Phool</h6>
+                                        <br>
+                                        <h6>Mar 25, 2020</h6>
+                                </div>
+
+                                
+                        </div>
+
+                        <div id="songIndividual">
+                                <img src="image/song0.png">
+
+                                <div id="songInfo">
+                                        <h6>Genda Phool</h6>
+                                        <br>
+                                        <h6>Mar 25, 2020</h6>
+                                </div>
+
+                                
+                        </div>
+
+                        <div id="songIndividual">
+                                <img src="image/song0.png">
+
+                                <div id="songInfo">
+                                        <h6>Genda Phool</h6>
+                                        <br>
+                                        <h6>Mar 25, 2020</h6>
+                                </div>
+
+                                
+                        </div>
+
+
+
+
+
+
+
+                        
+                        
+                </div>
+
+               
+                        
+        </aside>
+                
+
+       
+
+</body>
+</html>

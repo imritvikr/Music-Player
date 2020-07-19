@@ -1,0 +1,496 @@
+
+/* Basic Design for body */
+*{
+	color: white;
+}
+body{
+    background-color:#040a1df2;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+
+/* Design for header of the body */
+
+#logo{
+	margin-left: 20px;
+	width: 100px;
+	display: inline-block;
+	
+}
+
+#logo img{
+	height: 80px;
+	width:auto;
+	margin: 20px; 
+	display: inline-block;
+	float: left;
+}
+
+/* this is for favourite playlist and it has anchor tag as well */
+#favourites{
+	position:absolute;
+    width:auto;
+    left:23%;
+    margin-top:-70px;
+}
+
+#favourites a{
+
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+/* this rule is for search box in the header of body */
+
+#search input{
+	border: 0px solid transparent;
+	background: transparent;
+
+	
+}
+
+#search{
+	position: absolute;
+    width:auto;
+    left:55%;
+    margin-top:-70px;
+
+
+    
+}
+/*this is for the notification section */
+
+#bell{
+	position:absolute;
+    width:auto;
+    left:90%;
+    margin-top:-70px;
+
+}
+/* this rule is written for profile of a user */
+
+#profile{
+	position:absolute;
+    width:auto;
+    left:95%;
+    margin-top:-70px;
+}
+
+/*From here design for main starts but first the rules are written for content part which is left side of
+the webpage. After we are done with content then we will go for Queue, which is in the right side of the page */
+
+main{
+    position: relative;
+	display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: column;
+     width: 70%;
+}
+
+/*these rules are written for carousel effect */
+
+#content {
+    margin-top: 80px;
+}
+
+/* These rules for carousel effect */
+
+#Carousel{
+	
+
+}
+
+#slider ul li{
+	display: inline;
+}
+
+#slider{
+
+	margin-left: 27%;
+	transform: scale(0.5);
+}
+
+#images{
+	width:60%;
+	margin-left: 30%;
+	margin-top: 10%;
+    padding: 10px;
+    height: 30vh;
+	overflow: hidden;
+	display: inline-block;
+	
+}
+
+#images img{
+	width:60%;
+	height: 35vh;
+}
+#images img:hover{
+	transform: scale(1.2);
+}
+
+/*these rules are for the section Latest release */
+
+#latest{
+	margin-left: 20%;
+	margin-top: 2%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	position: relative;
+	width: 80%;
+	
+}
+#latest h3{
+	display: block;
+}
+.imageLat{
+	display: inline-block;
+}
+
+.imageLat img{
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+}
+
+.imageLat img:hover{
+	transform: scale(1.1);
+}
+#componants{
+	width: 100%;
+	flex-wrap: wrap;
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+
+
+}
+
+#componant1{
+	display: inline-block;
+	width: 200px;
+	justify-content: space-between;
+	position: relative;
+	
+
+}
+#componant2{
+	display: inline-block;
+	width: 200px;
+	justify-content: space-between;
+	position: relative;
+	
+}
+#componant3{
+	display: inline-block;
+	width: 200px;
+	justify-content: space-between;
+	position: relative;
+	
+}
+.info{
+	display: inline-block;
+}
+
+.info h6{
+	
+	margin-top: -40px;
+}
+
+.dots{
+	display: inline-block;
+	margin-left: -25px;
+	margin-right: 0;
+	float: right;
+	position: relative;
+}
+
+#music-player{
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+#music-player:target{
+	visibility: visible;
+	width: 100px;
+	height: 20px;
+}
+/* this is to fix the player control at the bottom */
+
+audio{
+	bottom: 0; 
+    position: fixed; 
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    color: black;
+}
+
+/*this is for dropdown to those three dots. I have added anchor tag to only first one. Just to show the functionality.*/
+
+
+#dropdown{
+  display: none;
+  position: absolute;
+  background-color:#040a1df2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000;
+
+}
+
+#dropdown:target{
+  display: block;
+}
+
+.play-button{
+	position: absolute;
+	transform: scale(2.5);
+	top: 25px;
+	left: 25px;
+	z-index: 100;
+	float: left;
+	display: inline-block;
+}
+
+/* these set of rules are for the section popular artist. Artist have their separate page as well */
+
+#popular-artist{
+	margin-left: 20%;
+	margin-top: 2%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	position: relative;
+	width: 80%;
+}
+
+.image img{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	display: inline-block;
+	
+}
+
+.image img:hover{
+	transform: scale(1.1);
+
+}
+
+#list-artist{
+	width: 100%;
+	flex-wrap: wrap;
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+}
+
+.artist{
+	display: inline-block;
+	width: 200px;
+	justify-content: space-between;
+	position: relative;
+	margin: 20px;
+
+}
+
+#popular-artist h3{
+	display: block;
+}
+
+.artist h6{
+	position: absolute;
+	left:20px;
+	margin: 10px;
+}
+/*These rules are written for Genre section */
+
+.imageMood img{
+	width: 200px;
+	height: 120px;
+	display: inline-block;
+}
+.imageMood img:hover{
+	transform: scale(1.4);
+}
+
+
+.imageMood{
+	display: inline-block;
+	width: 200px;
+	justify-content: space-between;
+	position: relative;
+	margin: 20px;
+}
+
+#mood{
+	margin-left: 20%;
+	margin-top: 4%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	position: relative;
+	width: 80%;
+	
+}
+
+#mood h3{
+	display: block;
+}
+/*these set of rules written for Popular in hindi and Popular in English section */
+
+#hindi{
+	margin-left: 20%;
+	margin-top: 4%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	position: relative;
+	width: 80%;
+}
+
+#hindi h3{
+	display: block;
+}
+
+.imageHindi img{
+	width: 120px;
+	height: 120px;
+	display: inline-block;
+}
+
+.imageHindi img:hover{
+	transform: scale(1.2);
+}
+
+/*These rules are written for aside section which is on the right side of the page as Queue */
+
+aside{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3%;
+    width: 25%;
+    height: auto;
+    display: relative;
+}
+
+#queueHead{
+	align-items: baseline;
+	justify-content: space-between;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+#queueHead h4{
+ display: inline;
+ position: absolute;
+ margin-top: 5px;
+}
+
+#queueHead p{
+ display: inline;
+ position: absolute;
+ color: blue;
+ margin-left: 14vw;
+ margin-top: 5px;
+}
+
+#drop{
+ display: inline;
+ text-decoration: none;
+ margin-left: 5px;
+ 
+}
+
+
+#queueDrop{
+  display: none;
+  position: absolute;
+  background-color:#040a1df2;
+  min-width: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000;
+  margin-left: 18vw;
+  margin-top: 25px;
+}
+
+#queueDrop a{
+	text-decoration: none;
+}
+
+
+#queueDrop:target{
+ display: block;
+ 
+}
+/* Below are the rules for adding songs in the queue and playlist */
+#songList{
+	margin-top: 70px;
+}
+
+#songIndividual{
+	position: relative;
+}
+
+#songIndividual img{
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	margin: 10px;
+}
+
+#songIndividual img:hover{
+	transform: scale(1.2);
+
+}
+
+#songInfo{
+	display: inline-block;
+	margin-top: 40px;
+	position: absolute;
+}
+
+#songInfo h6{
+	display: inline;
+
+}
+
+/* The rules for individual artists are written as inline and internal(few) css in that file itself. There is no 
+rule for Single Playlist in this file. Please refer to that file for the rules.
+
+/*this is for responsive design */
+
+@media screen and (max-width: 600px){
+
+main{
+ width: 100%;
+}
+aside{
+    display: inline-block;
+    margin: 10%;
+    margin-left: 20%;
+    width: 80%;
+    height: auto;
+    display: relative;
+}
+#favourites{
+	display: none;
+}
+
+#bell{
+	display: none;
+}
+
+#profile{
+	display: none;
+}
+
+
+}
